@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Braj Dham Hotel Barsana | Comfortable Stay in Barsana</title>
+
+  <meta name="description" content="Braj Dham Hotel Barsana offers comfortable AC rooms, family restaurant, free Wi-Fi, free breakfast and parking in Barsana, Uttar Pradesh.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf2;
+      color: #3d2618;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(48, 25, 14, 0.97);
+      color: white;
+      padding: 14px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+      color: #ffd27a;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 11px;
+      color: #fff;
+      font-weight: normal;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+    }
+
+    nav a {
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd27a;
+    }
+
+    .nav-btn {
+      background: #e99a22;
+      padding: 9px 15px;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 650px;
+      background:
+        linear-gradient(rgba(45, 22, 10, 0.65), rgba(45, 22, 10, 0.72)),
+        url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 50px 20px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .rating {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 8px 16px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 680px;
+      margin: auto;
+      opacity: 0.95;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 23px;
+      border-radius: 30px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .btn-primary {
+      background: #e99a22;
+      color: white;
+    }
+
+    .btn-light {
+      background: white;
+      color: #4a2918;
+    }
+
+    /* BOOKING BAR */
+    .booking-box {
+      max-width: 1050px;
+      margin: -45px auto 50px;
+      position: relative;
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.15);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .booking-box label {
+      font-size: 12px;
+      font-weight: bold;
+      color: #79512e;
+    }
+
+    .booking-box input,
+    .booking-box select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ddd;
+      border-radius: 9px;
+      background: #fff;
+    }
+
+    .booking-box button {
+      margin-top: 19px;
+      background: #4c2818;
+      color: white;
+      border: none;
+      border-radius: 9px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    /* GENERAL */
+    section {
+      padding: 75px 6%;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 45px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      color: #4a2918;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #705d4d;
+    }
+
+    /* FEATURES */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .feature {
+      background: white;
+      padding: 25px 15px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(80,50,20,0.08);
+    }
+
+    .feature-icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .feature h3 {
+      font-size: 17px;
+    }
+
+    /* ROOMS */
+    .rooms {
+      background: #f5eadb;
+    }
+
+    .room-grid {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .room-card {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(50,30,10,0.1);
+    }
+
+    .room-card img {
+      height: 270px;
+      object-fit: cover;
+    }
+
+    .room-content {
+      padding: 23px;
+    }
+
+    .room-content h3 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .room-price {
+      color: #b36a05;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    .room-list {
+      color: #675547;
+      margin-bottom: 18px;
+    }
+
+    /* ABOUT */
+    .about {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about img {
+      border-radius: 20px;
+      height: 420px;
+      object-fit: cover;
+    }
+
+    .about h2 {
+      font-size: 38px;
+      margin-bottom: 15px;
+    }
+
+    /* RESTAURANT */
+    .restaurant {
+      background:
+        linear-gradient(rgba(45,25,12,0.7), rgba(45,25,12,0.7)),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1500&q=85")
+        center/cover;
+      color: white;
+      text-align: center;
+    }
+
+    .restaurant h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .restaurant p {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    /* GALLERY */
+    .gallery {
+      max-width: 1150px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .gallery img {
+      height: 230px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    /* REVIEWS */
+    .reviews {
+      background: #f5eadb;
+    }
+
+    .review-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .review {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(50,30,10,0.08);
+    }
+
+    .stars {
+      color: #e99a22;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .review-author {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    /* LOCATION */
+    .location-box {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .location-info {
+      background: #4c2818;
+      color: white;
+      padding: 35px;
+      border-radius: 18px;
+    }
+
+    .location-info h2 {
+      color: #ffd27a;
+      margin-bottom: 20px;
+    }
+
+    .map {
+      width: 100%;
+      min-height: 350px;
+      border: 0;
+      border-radius: 18px;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: #fff3df;
+      text-align: center;
+    }
+
+    .phone {
+      font-size: 27px;
+      font-weight: bold;
+      color: #a95f00;
+      margin: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #2d180e;
+      color: #eee;
+      padding: 45px 6% 25px;
+      text-align: center;
+    }
+
+    footer h2 {
+      color: #ffd27a;
+      margin-bottom: 8px;
+    }
+
+    footer p {
+      color: #d2c5bd;
+    }
+
+    .copyright {
+      border-top: 1px solid #543a2c;
+      margin-top: 25px;
+      padding-top: 20px;
+      font-size: 13px;
+    }
+
+    /* FLOATING BUTTONS */
+    .floating {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .float-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 22px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+    }
+
+    .call {
+      background: #2f6fed;
+    }
+
+    .whatsapp {
+      background: #20b95a;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+
+      header {
+        padding: 13px 5%;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        min-height: 570px;
+      }
+
+      .booking-box {
+        margin: -25px 5% 35px;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .features {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .room-grid,
+      .about,
+      .location-box {
+        grid-template-columns: 1fr;
+      }
+
+      .review-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .gallery img {
+        height: 170px;
+      }
+
+      section {
+        padding: 55px 5%;
+      }
+    }
+
+    @media (max-width: 500px) {
+
+      .booking-box {
+        grid-template-columns: 1fr;
+      }
+
+      .booking-box button {
+        padding: 13px;
+      }
+
+      .features {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero h1 {
+        font-size: 39px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .section-title h2,
+      .about h2 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a href="#" class="logo">
+      Braj Dham Hotel
+      <span>Barsana • Uttar Pradesh</span>
+    </a>
+
+    <nav>
+      <a href="#rooms">Rooms</a>
+      <a href="#restaurant">Restaurant</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="#booking" class="nav-btn">Book Now</a>
+    </nav>
+  </header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <div class="rating">
+        ⭐ 4.3 / 5 Google Reviews
+      </div>
+
+      <h1>Welcome to Braj Dham Hotel Barsana</h1>
+
+      <p>
+        Comfortable rooms, delicious food and warm hospitality
+        in the heart of Barsana.
+      </p>
+
+      <div class="buttons">
+        <a href="#booking" class="btn btn-primary">
+          🛏️ Book Your Room
+        </a>
+
+        <a href="tel:+919027557374" class="btn btn-light">
+          📞 Call Now
+        </a>
+
+        <a
+          href="https://wa.me/919027557374?text=Hello%20Braj%20Dham%20Hotel%20Barsana,%20I%20want%20to%20enquire%20about%20room%20booking."
+          class="btn btn-light"
+          target="_blank">
+          💬 WhatsApp
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BOOKING -->
+  <section id="booking">
+
+    <div class="booking-box">
+
+      <div>
+        <label>CHECK-IN</label>
+        <input type="date" id="checkin">
+      </div>
+
+      <div>
+        <label>CHECK-OUT</label>
+        <input type="date" id="checkout">
+      </div>
+
+      <div>
+        <label>GUESTS</label>
+        <select id="guests">
+          <option>1 Guest</option>
+          <option selected>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4 Guests</option>
+          <option>5+ Guests</option>
+        </select>
+      </div>
+
+      <button onclick="checkAvailability()">
+        Check Availability
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- AMENITIES -->
+  <section id="amenities">
+
+    <div class="section-title">
+      <h2>Everything You Need</h2>
+      <p>
+        Enjoy a comfortable and convenient stay with essential
+        hotel facilities.
+      </p>
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+        <div class="feature-icon">📶</div>
+        <h3>Free Wi-Fi</h3>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🍳</div>
+        <h3>Free Breakfast</h3>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🚗</div>
+        <h3>Free Parking</h3>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">❄️</div>
+        <h3>Air Conditioning</h3>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🛎️</div>
+        <h3>Room Service</h3>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">👕</div>
+        <h3>Laundry Service</h3>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">👨‍👩‍👧‍👦</div>
+        <h3>Family Friendly</h3>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🥗</div>
+        <h3>Vegan Options</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ROOMS -->
+  <section class="rooms" id="rooms">
+
+    <div class="section-title">
+      <h2>Our Comfortable Rooms</h2>
+      <p>
+        Relax after exploring Barsana and the beautiful Braj region.
+      </p>
+    </div>
+
+    <div class="room-grid">
+
+      <div class="room-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=85"
+          alt="Comfortable hotel room">
+
+        <div class="room-content">
+
+          <h3>Deluxe AC Room</h3>
+
+          <p>
+            A comfortable air-conditioned room designed for
+            a relaxing stay.
+          </p>
+
+          <div class="room-price">
+            Price on enquiry
+          </div>
+
+          <div class="room-list">
+            ✓ Air Conditioning<br>
+            ✓ Free Wi-Fi<br>
+            ✓ Comfortable Bed<br>
+            ✓ Attached Bathroom<br>
+            ✓ Room Service
+          </div>
+
+          <a href="#booking" class="btn btn-primary">
+            Book This Room
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="room-card">
+
+        <img
+          src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1000&q=85"
+          alt="Family hotel room">
+
+        <div class="room-content">
+
+          <h3>Family Room</h3>
+
+          <p>
+            Spacious accommodation suitable for families
+            visiting Barsana.
+          </p>
+
+          <div class="room-price">
+            Price on enquiry
+          </div>
+
+          <div class="room-list">
+            ✓ Family Friendly<br>
+            ✓ Air Conditioning<br>
+            ✓ Free Wi-Fi<br>
+            ✓ Attached Bathroom<br>
+            ✓ Room Service
+          </div>
+
+          <a href="#booking" class="btn btn-primary">
+            Book This Room
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section>
+
+    <div class="about">
+
+      <img
+        src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1000&q=85"
+        alt="Hotel">
+
+      <div>
+
+        <h2>Stay in the Heart of Barsana</h2>
+
+        <p>
+          Welcome to Braj Dham Hotel Barsana. We provide
+          comfortable accommodation, delicious food and
+          friendly hospitality for families, pilgrims and
+          travellers visiting the sacred Braj region.
+        </p>
+
+        <br>
+
+        <p>
+          Whether you are visiting Barsana for pilgrimage,
+          family travel or exploring Braj, our goal is to
+          make your stay comfortable and memorable.
+        </p>
+
+        <br>
+
+        <a href="#contact" class="btn btn-primary">
+          Contact Hotel
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RESTAURANT -->
+  <section class="restaurant" id="restaurant">
+
+    <h2>Taste the Flavours of Braj</h2>
+
+    <p>
+      Enjoy delicious food in a comfortable family-friendly
+      restaurant. Kids menu and vegan options are available.
+    </p>
+
+    <div class="buttons">
+
+      <a href="tel:+919027557374" class="btn btn-light">
+        🍽️ Food Enquiry
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- GALLERY -->
+  <section id="gallery">
+
+    <div class="section-title">
+
+      <h2>Hotel Gallery</h2>
+
+      <p>
+        Take a look at the comfortable stay and dining experience.
+      </p>
+
+    </div>
+
+    <div class="gallery">
+
+      <img
+        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+        alt="Hotel exterior">
+
+      <img
+        src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80"
+        alt="Hotel room">
+
+      <img
+        src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80"
+        alt="Hotel room">
+
+      <img
+        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+        alt="Restaurant">
+
+      <img
+        src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=800&q=80"
+        alt="Hotel">
+
+      <img
+        src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80"
+        alt="Hotel interior">
+
+    </div>
+
+  </section>
+
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+
+    <div class="section-title">
+
+      <h2>What Our Guests Say</h2>
+
+      <p>
+        ⭐ 4.3 / 5 Google Reviews
+      </p>
+
+    </div>
+
+    <div class="review-grid">
+
+      <div class="review">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          "Good service friendly staff, love the breakfast
+          and the rooms are clean."
+        </p>
+
+        <div class="review-author">
+          — Parmanand Jatwariya_04
+        </div>
+
+      </div>
+
+
+      <div class="review">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          "We really enjoyed the tasty food at the restaurant
+          downstairs."
+        </p>
+
+        <div class="review-author">
+          — Hariom Thakur
+        </div>
+
+      </div>
+
+
+      <div class="review">
+
+        <div class="stars">★★★★★</div>
+
+        <p>
+          "Excellent location, superb services, helpful staff,
+          what else do you need?"
+        </p>
+
+        <div class="review-author">
+          — Babli
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LOCATION -->
+  <section>
+
+    <div class="section-title">
+
+      <h2>Find Us in Barsana</h2>
+
+      <p>
+        Conveniently located on Ice Factory Road, Barsana.
+      </p>
+
+    </div>
+
+    <div class="location-box">
+
+      <div class="location-info">
+
+        <h2>📍 Braj Dham Hotel Barsana</h2>
+
+        <p>
+          Brij Dham Hotel Govardhan,
+          Ice Factory Road,
+          Barsana,
+          Uttar Pradesh 281405, India
+        </p>
+
+        <br>
+
+        <p>
+          📞 090275 57374
+        </p>
+
+        <br>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Brij+Dham+Hotel+Govardhan+Ice+Factory+Road+Barsana+Uttar+Pradesh+281405"
+          target="_blank"
+          class="btn btn-primary">
+          📍 Get Directions
+        </a>
+
+      </div>
+
+      <iframe
+        class="map"
+        src="https://www.google.com/maps?q=Brij%20Dham%20Hotel%20Govardhan%20Ice%20Factory%20Road%20Barsana%20Uttar%20Pradesh%20281405&output=embed"
+        loading="lazy">
+      </iframe>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+
+    <div class="section-title">
+
+      <h2>Ready to Stay With Us?</h2>
+
+      <p>
+        Call us or send a WhatsApp message for room availability
+        and booking.
+      </p>
+
+      <div class="phone">
+        📞 090275 57374
+      </div>
+
+      <div class="buttons">
+
+        <a
+          href="tel:+919027557374"
+          class="btn btn-primary">
+          📞 Call for Booking
+        </a>
+
+        <a
+          href="https://wa.me/919027557374?text=Hello%20Braj%20Dham%20Hotel%20Barsana,%20I%20want%20to%20book%20a%20room."
+      
